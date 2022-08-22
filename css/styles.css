@@ -1,0 +1,357 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --primery-text-color: #757575;
+    --secondary-text-color: #212121;
+    --text-color-white: #FFFFFF;
+    --accent-color: #2196F3;
+}
+/* --зкидання марджинів для заголовків, абзаців, списків, Відміна маркерів позицій списку, весь сайт-- */
+
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+/* --Вдміна підкреслювання посиланнь, весь сайт-- */
+
+a {
+    text-decoration: none;
+}
+/* --Визначення родини шрифтів для кнопок-- */
+button {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+/* --Зображення, елементи списків відміна відступів знизу-- */
+img, li {
+    display: block;
+}
+/* --Глобальнй стиль тексту в елементі/тезі "боді" -- */
+
+body {
+    background: #fff;
+    color: var(--primery-text-color);
+    font-family: var(--font-family);
+}
+/* --контейнер для позиціонування контенту на сторінці-- */
+.conteiner {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* --Назва секції загальні параметри-- */
+.section-name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+/* --ХЕДЕР-- */
+/* --Лого двокольорове-- */
+.logo-top {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2; 
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+.logo-top-studio {
+    color: #000000;
+}
+/* --Навігація сайту-- */
+
+.navigation, .navigation-list, .hdr-contacts  {
+    display: flex;
+    align-items: center;
+}
+.navigation-list {
+    margin-left: 93px;
+}
+.navigation-item-link:not(last-child) {
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.navigation-item-link {
+    display: flex;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+.navigation-item-link:hover,
+.navigation-item-link:focus {
+    color: var(--accent-color);
+}
+/* -- Контакти шапка -- */
+
+.hdr-contacts {
+    margin-left: auto;
+}
+
+.hdr-contacts-itm + .hdr-contacts-itm {
+    margin-left: 50px;
+}
+.hdr-contact-mail,
+.hdr-contact-phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+}
+.hdr-contact-mail:hover, .hdr-contact-mail:focus,
+.hdr-contact-phone:hover,.hdr-contact-phone:focus {
+    color: var(--accent-color);
+}
+/* --СТУДІЯ-- */
+/* --Герой-- */
+
+.motto {
+    display: flex;
+    background-color: #2F303A;
+}
+.motto-text  {
+    margin-top: 203px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+}
+.btn-modal-window {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 197px;
+    width: 216px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--text-color-white);
+}
+.btn-modal-window:hover,
+.btn-modal-window:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px
+}
+/* --Цінності-- */
+.values-hdr {
+    display: none;
+}
+.values-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    /* padding-bottom: 94px; */
+}
+.values-list-item {
+    width: 270px;
+}
+.value-name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+
+    margin-bottom: 10px;
+}
+.value-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color);
+}
+/* --Чим им займаємось-- */
+.directions, .directions-list {
+    display: flex;
+}
+/* .directions-list {
+    justify-content: space-between;
+} */
+.directions-list-item {
+width:calc((100%-30*2)/3);
+margin-right: 30px;
+margin-bottom: 94px;
+}
+.directions-list-item:nth-child(3) {
+    margin-right: 0;
+}
+/* --Наша команда-- */
+.team {
+    background: #F5F4FA;
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+.team-member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+
+padding-top: 30px;
+padding-bottom: 10px;
+}
+.team-member-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color);
+
+    padding-bottom: 30px;
+}
+
+/* --ПОРТФОЛІО ОСНОВНИЙ КОНТЕНТ-- */
+/* --Фільтр портфоліо-- */
+.section-name-hidden {
+    display: none;
+}
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+.filter-item:not(:last-child) {
+    margin-right: 4px;
+}
+.filter-item:not(:first-child) {
+    margin-left: 4px;
+}
+.filter-button {
+    padding: 6px 22px;
+}
+.first-button {
+    padding: 6px 25px;
+}
+.filter-button {
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    padding: 6px, 22px;
+    
+}
+
+.filter-button:hover, .filter-button:focus {
+    background-color: var(--accent-color);
+    color: var(--text-color-white);
+}
+/* --Проєкти-- */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 94px;
+}
+.project-img {
+    margin-bottom: 20px;
+}
+/* --Підписи проектів-- */
+
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+
+    margin-bottom: 4px;
+}
+.product-segment {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color);
+
+    margin-bottom: 20px;
+}
+/* --ПІДВАЛ-- */
+
+.page-bottom {
+    min-height: 252px;
+    background-color: #2F303A;
+}
+.footer-items {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.logo-bottom {
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.logo-bottom-studio {
+    color: #fff;
+}
+.footer-adressse {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-color-white);
+}
+.footer-mail,
+.footer-phone {
+        font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.ditails-list-item+.ditails-list-item {
+    margin-top: 9px;
+}
+.footer-mail:hover, .footer-mail:focus,
+.footer-phone:hover, .footer-phone:focus,
+.footer-adressse:hover, .footer-adressse:focus {
+    color: var(--accent-color);
+}
